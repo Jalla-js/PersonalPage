@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #000000;
+    filter: opacity(0.85);
+    backdrop-filter: blur(10px);
+    color: blue;
+}
+
+#logoHolder {
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    width: 200px;
+    height: 200px;
+}
+
+#Logo {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#Initials {
+    position: relative;
+    left: 80px;
+    top: -130px;
+    font-size: 70px;
+    z-index: 2;
+    color: white;
+}
