@@ -4,38 +4,49 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    background-color: #000;
+}
+
 #header {
-    position: sticky;
+    background: transparent;
     top: 0;
     left: 0;
     width: 100vw;
     height: 10vh;
-    background-color: #000000;
-    filter: opacity(0.85);
-    backdrop-filter: blur(10px);
-    color: blue;
-}
-
-#logoHolder {
-    position: absolute;
-    top: -7.5vh;
-    left: -7.5vh;
-    width: 15vh;
-    height: 15vh;
-}
-
-#Logo {
-    position: relative;
     z-index: 1;
-    top: 0;
-    left: 0;
 }
 
-#Initials {
-    position: relative;
-    left: 11.5vh;
-    top: -21vh;
-    font-size: 70px;
-    z-index: 2;
-    color: white;
+#nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45vw;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+#nav li {
+    width: calc(45vw / 4);
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    color: #f5c49d;
+    transition: 0.4s all ease-in-out;
+}
+
+#nav li:hover {
+    background-color: #333;
+}
+
+#heroImg {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    max-width: 80vw;
+    height: auto;
+    z-index: -1;
 }
