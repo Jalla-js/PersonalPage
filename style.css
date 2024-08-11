@@ -8,12 +8,12 @@
     --highlight-color: #944718;
     --text-color: #f3c56f;
     --dark-color1: #000000;
-    --dark-color2: #0d0d0d;
-    --dark-color3: #1A1A1A;
-    --dark-color4: #262626;
-    --dark-color5: #333333;
-    --dark-color6: #404040;
-    --dark-color7: #4D4D4D;
+    --dark-color2: #060606;
+    --dark-color3: #0c0c0c;
+    --dark-color4: #121212;
+    --dark-color5: #181818;
+    --dark-color6: #1e1e1e;
+    --dark-color7: #262626;
     --hover-color: #333;
   }
 
@@ -91,7 +91,7 @@ html {
     text-decoration: underline overline double;
     text-decoration-color: var(--highlight-color);
     color: var(--text-color);
-    font-size: clamp(40px, 2vw, 5vw);
+    font-size: clamp(30px, 2vw, 5vw);
   }
 
 #SecondHand {
