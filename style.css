@@ -35,6 +35,7 @@ html {
     list-style: none;
     color: #f5c49d;
     transition: 0.4s all ease-in-out;
+    font-size: clamp(12px, 1.5vw, 20px);
 }
 
 #nav li:hover {
