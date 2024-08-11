@@ -4,9 +4,28 @@
     box-sizing: border-box;
 }
 
+:root {
+    --highlight-color: #944718;
+    --text-color: #f3c56f;
+    --dark-color1: #000000;
+    --dark-color2: #0d0d0d;
+    --dark-color3: #1A1A1A;
+    --dark-color4: #262626;
+    --dark-color5: #333333;
+    --dark-color6: #404040;
+    --dark-color7: #4D4D4D;
+    --hover-color: #333;
+  }
+
 html {
     overflow-x: hidden;
-    background-color: #000;
+    background-color: var(--dark-color1);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #header {
@@ -33,23 +52,69 @@ html {
     cursor: pointer;
     text-align: center;
     list-style: none;
-    color: #f5c49d;
+    color: var(--text-color);
     transition: 0.4s all ease-in-out;
     font-size: clamp(15px, 1.5vw, 20px);
     /*font-size: 20px;*/
 }
 
 #nav li:hover {
-    background-color: #333;
+    background-color: var(--hover-color);
+}
+
+#hero {
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #heroImg {
-    top: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
     width: 100vw;
     max-width: 1000px;
     height: auto;
     z-index: -1;
 }
+
+#home {
+    position: relative;
+}
+
+#AboutUs {
+    padding: 50px;
+    background-color: var(--dark-color2); /* Distinguish sections */
+  }
+
+.header {
+    text-align: center;
+    text-decoration: underline overline double;
+    text-decoration-color: var(--highlight-color);
+    color: var(--text-color);
+    font-size: clamp(40px, 2vw, 5vw);
+  }
+
+#SecondHand {
+    background-color:  var(--dark-color3);
+    padding: 50px;
+  }
+  
+#Refurbished {
+    background-color:  var(--dark-color4);
+    padding: 50px;
+  }
+  
+#Services {
+    background-color: var(--dark-color5);
+    padding: 50px;
+  }
+  
+#Testimonials {
+    background-color:  var(--dark-color6);
+    padding: 50px;
+  }
+  
+#FAQs {
+    background-color: var(--dark-color7);
+    padding: 50px;
+  }
